@@ -1,8 +1,7 @@
 # Restaurant Menu PHP Project
 ---
 **Project By:**
-Bunty Singh
-23BCS10683
+Gourav Sharma (23BCS10857), Bunty Singh (23BCS10683)
 ---
 
 ## About
