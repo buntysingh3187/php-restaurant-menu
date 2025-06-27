@@ -1,0 +1,212 @@
+/* styles for restaurant project */
+
+
+body {
+    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg, #e9f5e1 0%, #f5ecd7 100%);
+    color: #222;
+    min-height: 100vh;
+}
+
+h1, h2 {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: #2e7031;
+}
+
+#tables, #menu, #orders {
+
+    margin: 24px auto;
+    max-width: 700px;
+    padding: 18px 24px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+
+.table, .menu-item, .order, .completed, .in-progress {
+
+    padding: 14px 18px;
+    margin: 12px 0;
+    border: 1.5px solid #e0e0e0;
+    border-radius: 7px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.08em;
+    transition: background 0.2s, box-shadow 0.2s;
+}
+
+.completed {
+
+    background-color: #d6f5d6;
+    border-color: #b6e6c9;
+    color: #1b5e20;
+}
+
+.in-progress {
+
+    background-color: #fdf6e3;
+    border-color: #ffe082;
+    color: #8d6e63;
+}
+
+.table:hover, .menu-item:hover, .order:hover {
+    background-color: #f1f8ff;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+button, .btn {
+
+    padding: 12px 22px;
+    background-color: #388e3c;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.08em;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(56, 142, 60, 0.10);
+    transition: background 0.2s, box-shadow 0.2s, transform 0.15s;
+    margin-top: 12px;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    display: inline-block;
+    outline: none;
+}
+
+button:focus, .btn:focus {
+    outline: 2px solid #a8e063;
+    outline-offset: 2px;
+}
+
+button:hover, .btn:hover {
+    background-color: #2e7031;
+    box-shadow: 0 4px 16px rgba(56, 142, 60, 0.18);
+    transform: translateY(-2px) scale(1.03);
+}
+
+.badge {
+
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 0.95em;
+    font-weight: 600;
+    margin-left: 8px;
+}
+
+.badge-done {
+    background: #388e3c;
+    color: #fff;
+}
+
+.badge-pending {
+    background: #e0b96a;
+    color: #fff;
+}
+
+.progress-bar {
+
+    width: 100%;
+    background: #e0e0e0;
+    border-radius: 8px;
+    margin: 18px 0 24px 0;
+    height: 20px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(168, 224, 99, 0.10);
+}
+.progress-bar-inner {
+    height: 100%;
+    background: linear-gradient(90deg, #a8e063 0%, #f5ecd7 100%);
+    border-radius: 8px;
+    transition: width 0.4s;
+}
+p {
+    margin: 7px 0;
+}
+
+input[type="number"], input[type="text"], input[type="password"], input[type="file"] {
+    padding: 8px 10px;
+    border: 1.5px solid #b6e6c9;
+    border-radius: 6px;
+    font-size: 1em;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    box-shadow: 0 1px 4px rgba(56, 142, 60, 0.06);
+    background: #f5f7f2;
+}
+
+input[type="number"]:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="file"]:focus {
+    border-color: #388e3c;
+    outline: none;
+    box-shadow: 0 2px 8px rgba(56, 142, 60, 0.12);
+}
+
+/* Menu Grid and Card Styles */
+.menu-grid {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.menu-item-card {
+
+    background: #f8faf7;
+    border: 1.5px solid #b6e6c9;
+    border-radius: 14px;
+    box-shadow: 0 2px 8px rgba(56, 142, 60, 0.07);
+    padding: 22px 16px 18px 16px;
+    min-width: 160px;
+    max-width: 210px;
+    flex: 1 0 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: box-shadow 0.2s, border-color 0.2s, transform 0.15s;
+    text-align: center;
+    background: linear-gradient(120deg, #f5ecd7 60%, #e9f5e1 100%);
+}
+
+.menu-item-card:hover {
+    border-color: #388e3c;
+    box-shadow: 0 6px 18px rgba(56, 142, 60, 0.13);
+    transform: translateY(-2px) scale(1.03);
+}
+
+.menu-item-title {
+
+    font-size: 1.15em;
+    font-weight: 700;
+    margin-bottom: 7px;
+    color: #2e7031;
+}
+
+.menu-item-price {
+
+    font-size: 1.08em;
+    color: #388e3c;
+    margin-bottom: 10px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+}
+
+.menu-item-qty {
+
+    margin-top: 4px;
+    margin-bottom: 0;
+    width: 80px;
+}
